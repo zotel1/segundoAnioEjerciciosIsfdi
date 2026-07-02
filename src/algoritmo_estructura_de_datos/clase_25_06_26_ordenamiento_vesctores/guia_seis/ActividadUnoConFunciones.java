@@ -1,4 +1,4 @@
-package algoritmo_estructura_de_datos.clase_25_06_26_ordenamiento_vesctores;
+package algoritmo_estructura_de_datos.clase_25_06_26_ordenamiento_vesctores.guia_seis;
 
 public class ActividadUnoConFunciones {
 

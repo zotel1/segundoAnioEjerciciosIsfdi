@@ -1,4 +1,4 @@
-package algoritmo_estructura_de_datos.clase_25_06_26_ordenamiento_vesctores;
+package algoritmo_estructura_de_datos.clase_25_06_26_ordenamiento_vesctores.guia_seis;
 /**
  * Un comercio registra las cantidades disponibles de distintos productos.
  * [35, 12, 80, 5, 20, 50]*/
@@ -24,8 +24,8 @@ public class ActividadTres {
                 int varAux = 0;
                 if (productos[j] > productos[j + 1]) {
                     varAux = productos[j];
-                    productos[j + 1] = varAux;
                     productos[j] = productos[j + 1];
+                    productos[j + 1] = varAux;
                   //  productos[j + 1] = varAux;
                 }
             }
@@ -33,9 +33,5 @@ public class ActividadTres {
         for (int i = 0; i < productos.length; i++) {
             System.out.println("El orden de los productos con menos stock serian: " + productos[i]);
         }
-
-        System.out.println("Actualizamos el repo viejo");
-
-
     }
 }
