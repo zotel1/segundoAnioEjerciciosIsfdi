@@ -34,7 +34,7 @@ public class ActividadTres {
             System.out.println("El orden de los productos con menos stock serian: " + productos[i]);
         }
 
-        System.out.println("Actualizamos el repo");
+        System.out.println("Actualizamos el repo viejo");
 
 
     }
