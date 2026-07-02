@@ -1,4 +1,4 @@
-package algoritmo_estructura_de_datos.guia_seis;
+package algoritmo_estructura_de_datos.guia_seis.arreglos.ordenamiento;
 
 public class Actividad_seis {
 
