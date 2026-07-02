@@ -1,0 +1,78 @@
+Algoritmo calculadoraPseint
+	// 1- Diseñar un algoritmo en pseint que trabaje en forma de calculadora ingrresando datos de tipo flotante.
+	// 2- DIseñar el algoritmo del punto anterior en lenguaje python.
+	// 3- Diseñar el algoritmo en lenguaje C.
+	// 4- Explicar por bloque como funciona la calculadora.
+	definir desicion Como Entero;
+	Definir primerNumero, segundoNumero, sum, res, div, mult Como Real;
+	Definir eleccion Como Caracter;
+	Escribir "************************************************** INICIO DE LA APLICACIÓN **************************************************"
+	
+	Escribir "Desea realizar una operación? [s/n]"
+	leer eleccion;
+	Mientras (eleccion = "s") Hacer
+		
+		
+		Escribir "------------------------------------------------- CALCULADORA -------------------------------------------------";
+		Escribir "Elija una de las siguientes operaciones: ";
+		Escribir "1- Suma.";
+		Escribir "2- Resta.";
+		Escribir "3- Multiplicacion.";
+		Escribir "4- División.";
+		
+		Leer desicion;
+		si desicion < 1 Entonces
+			Escribir "Debe elegir una opcion entre 1 y 4";
+		SiNo
+			si desicion > 4 Entonces
+				Escribir "Debe elegir una opcin entre 1 y 4";
+			SiNo
+				si desicion = 1 Entonces
+					Escribir "Ingrese el primer numero a sumar:";
+					leer primerNumero;
+					Escribir "Ingrese el segundo numero a sumar: ";
+					leer segundoNumero;
+					sum = primerNumero + segundoNumero;
+					Escribir "La suma entre el número ", primerNumero, " y el número ", segundoNumero, " es: ", sum;
+				FinSi
+				si desicion = 2 Entonces
+					Escribir "Ingrese el primer numero a restar:";
+					leer primerNumero;
+					Escribir "Ingrese el segundo numero a restar: ";
+					leer segundoNumero;
+					res = primerNumero - segundoNumero;
+					Escribir "La resta del número ", primerNumero, " al número ", segundoNumero, " es: ", res;
+				FinSi
+				si desicion = 3 Entonces
+					Escribir "Ingrese el primer numero a multiplicar:";
+					leer primerNumero;
+					Escribir "Ingrese el segundo numero a multiplicar: ";
+					leer segundoNumero;
+					mult = primerNumero * segundoNumero;
+					Escribir "La multiplicación entre el número ", primerNumero, " y el número ", segundoNumero, " es: ", mult;
+				FinSi
+				si desicion = 4 Entonces
+					Escribir "Ingrese el primer numero a dividir:";
+					leer primerNumero;
+					Escribir "Ingrese el segundo numero a dividir: ";
+					leer segundoNumero;
+					si (primerNumero = 0) y (segundoNumero = 0) Entonces
+						Escribir "No se puede realizar la operacion de ", primerNumer, "dividido ", segundoNumero;
+					SiNo
+						si (segundoNumero = 0) Entonces
+							Escribir " no existe un núero que multiplicado por 0 de ", primerNumero;
+						SiNo
+							div = primerNumero / segundoNumero;
+							Escribir "La divisin del número ", primerNumero, " al número ", segundoNumero, " es: ", div;
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+		Escribir "-------------------------------------------------             -------------------------------------------------"
+		Escribir "Desea realizar una operación?"
+		leer eleccion;
+	FinMientras
+	Escribir "************************************************** FIN DE LA APLICACIÓN **************************************************"
+	
+FinAlgoritmo
